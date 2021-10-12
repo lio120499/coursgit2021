@@ -1,0 +1,77 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+#resolution{
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+    opacity: .6;
+}
+
+#resolution:after{
+    content: "XS < 576px";
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    #resolution{
+        background-color: green;
+    }
+    
+    #resolution:after{
+        content: "576px < SM < 767px";
+    }
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #resolution{
+        background-color: blue;
+    }
+    
+    #resolution:after{
+        content: "768px < MD < 991px";
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #resolution{
+        background-color: purple;
+    }
+    
+    #resolution:after{
+        content: "992px < LG < 1199px";
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #resolution{
+        background-color: pink;
+    }
+    
+    #resolution:after{
+        content: "1200px < XL < 1399px";
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    #resolution{
+        background-color: orange;
+    }
+    
+    #resolution:after{
+        content: "1400px < XXL";
+    }
+}
